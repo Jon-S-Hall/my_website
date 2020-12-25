@@ -1,0 +1,29 @@
+.container {
+    padding: 0 1rem;
+    font-family: 'OCRAExtendedRegular';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerImage {
+    width: 6rem;
+    height: 6rem;
+}
+
+.headerHomeImage {
+    width: 8rem;
+    height: 8rem;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+/* this allows using custom fonts from a link (can be local). Afterwards, we can treat the new font like any native one*/
+@font-face {
+    font-family: 'OCRAExtendedRegular';
+    src: url('../fonts/OCRAEXT.TTF');
+}
