@@ -1,11 +1,34 @@
-.container {
-    padding: 0 1rem;
+.page {
     font-family: 'OCRAExtendedRegular';
+    overflow: auto;
 }
 
-.header {
+.nav_panel{
     display: flex;
-    flex-direction: column;
+    justify-content: left;
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.nav_item{
+    font-family: 'OCRAExtendedRegular';
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color:black;
+    padding: 2rem 4rem 1rem 4rem;
+}
+
+.nav_item:hover{
+    color: crimson;
+}
+
+.nav_title {
+    left:80%;
+    position:fixed;
+}
+
+.nav_container{
+    display: flex;
 }
 
 .headerImage {
@@ -26,4 +49,55 @@
 @font-face {
     font-family: 'OCRAExtendedRegular';
     src: url('../fonts/OCRAEXT.TTF');
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+    background-color: black;
+    color: antiquewhite;
+    justify-content: center;
+}
+
+.footer_name{
+    font-family: 'OCRAExtendedRegular';
+    text-align: center;
+    padding-top: 1%;
+}
+.footer_name:hover{
+    color: yellow;
+}
+.sm_links {
+    padding-top: .5rem;
+    height:4rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_svg {
+    height:4rem;
+    width:4rem;
+}
+
+.footer_li{
+    display: inline-block;
+    justify-content: center;
+    width:10%;
+    text-align: center;
+}
+
+.github{
+    width:auto;
+    height:auto;
+    fill:antiquewhite;
+}
+
+.github:hover {
+    fill:red;
 }

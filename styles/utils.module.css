@@ -6,9 +6,13 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    padding-bottom: 1rem;
+    font-family: 'OCRAExtendedRegular';
 }
 
+
 .headingXl {
+    font-family: 'OCRAExtendedRegular';
     font-size: 2rem;
     line-height: 1.3;
     font-weight: 800;
@@ -17,12 +21,14 @@
 }
 
 .headingLg {
+    font-family: 'OCRAExtendedRegular';
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
 }
 
 .headingMd {
+    font-family: 'OCRAExtendedRegular';
     font-size: 1.1rem;
     line-height: 1.5;
 }
@@ -51,4 +57,10 @@
 
 .lightText {
     color: #999;
+}
+
+/* this allows using custom fonts from a link (can be local). Afterwards, we can treat the new font like any native one*/
+@font-face {
+    font-family: 'OCRAExtendedRegular';
+    src: url('../fonts/OCRAEXT.TTF');
 }
