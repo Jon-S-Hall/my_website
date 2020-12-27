@@ -20,12 +20,22 @@ export default function Home() {
                         </div>
                         <div className={styles.ts_body}>
                             <p className={utilStyles.bodyMd}>
-                                Outside of class I like to work on projects, go on jogs, and play chess.
+                                And I love tackling tough math problems.
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                I made this website to explore frontend dev and showcase some of my work.
+                                This may seem a bit masochistic (just ask teenage me) but tough problems allow me to be both
+                                logical and creative at the same time. They challenge me to make mistakes, and learn.
                             </p>
                             <p className={utilStyles.bodyMd}>
+                                And the solutions usually end up being pretty neat.
+                            </p>
+                            <p className={utilStyles.bodyMd}>
+                                While my passion lies with math and algorithms, I appreciate the need for responsive,
+                                efficient, and elegant web design. I built this website to learn javascript, explore design, and showcase some
+                                of my work in the process.
+                            </p>
+                            <p className={utilStyles.bodyMd}>
+                                Outside of coding I like to work go on jogs, play chess, and find cool coffee shops.
                                 Feel free to look around and let me know you visited!
                             </p>
 

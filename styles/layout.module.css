@@ -127,3 +127,9 @@
         left: 75%;
     }
 }
+
+@media (max-width: 600px) {
+    .nav_title_mobile{
+        display: none;
+    }
+}

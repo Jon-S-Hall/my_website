@@ -53,6 +53,7 @@ padding-left: 1rem;
 .ts_body{
   padding-left: 3rem;
   padding-right: 7rem;
+  padding-top: 2%;
 }
 .p{
   padding-left: 5rem;
@@ -79,5 +80,6 @@ padding-left: 1rem;
     width:100%;
     overflow:visible;
     text-align: center;
+    padding-bottom: 5%;
   }
 }

@@ -21,6 +21,9 @@ export default function NavBar() {
                     <div className={styles.nav_item}>
                         <Link href={"#"}>Fun</Link>
                     </div>
+                    <div className={styles.nav_item}>
+                        <Link href={"/Contact_Me"}>Contact Me</Link>
+                    </div>
 
                 </div>
             </div>
