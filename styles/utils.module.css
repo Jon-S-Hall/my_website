@@ -32,6 +32,11 @@
     font-size: 1.1rem;
     line-height: 1.5;
 }
+.bodyMd {
+    font-family: monospace;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
 
 .borderCircle {
     border-radius: 9999px;
@@ -63,4 +68,34 @@
 @font-face {
     font-family: 'OCRAExtendedRegular';
     src: url('../fonts/OCRAEXT.TTF');
+}
+
+
+@media (max-width: 1060px){
+
+    .heading2Xl {
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.05rem;
+        margin: .5rem 0;
+        padding-bottom: .5rem;
+        font-family: 'OCRAExtendedRegular';
+    }
+
+    .headingXl {
+        font-family: 'OCRAExtendedRegular';
+        font-size: 1.5rem;
+        line-height: 1.1;
+        font-weight: 600;
+        letter-spacing: -0.05rem;
+        margin: 0 0;
+    }
+
+
+
+    .bodyMd {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
 }
