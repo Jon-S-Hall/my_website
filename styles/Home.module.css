@@ -24,13 +24,18 @@
   margin-bottom: 2rem;
 }
 
+.mid_section{
+  display: flex;
+  flex-direction: row;
+
+}
+
 .ts_picture{
   width: 40%;
   height: auto;
   max-height: 100%;
   text-align: center;
-  padding: 3rem 3rem 2rem 2rem;
-  padding-left: 2%;
+  padding: 3rem 3rem 2rem 2%;
 
 }
 

@@ -35,7 +35,7 @@ export default function Home() {
                                 of my work in the process.
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                Outside of coding I like to work go on jogs, play chess, and find cool coffee shops.
+                                Outside of coding I like to go on long jogs, play chess, and find cool coffee shops.
                                 Feel free to look around and let me know you visited!
                             </p>
 
