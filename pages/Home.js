@@ -44,6 +44,49 @@ export default function Home() {
                     </div>
 
                 </section>
+                <section className={styles.mid_section}>
+                    <div className={styles.mid_div}>
+                        <p className={utilStyles.heading2Xl}>
+                            Interests
+                        </p>
+                        <ul className={styles.mid_list}>
+                            <li> Jogs/long walks</li>
+                            <li> Chess</li>
+                            <li> Finding cool coffee shops</li>
+                        </ul>
+                    </div>
+                    <div className={styles.mid_div}>
+                        <h1 className={utilStyles.heading2Xl}>
+                            Skills
+                        </h1>
+                        <div className={styles.skills_div}>
+                            <div className={styles.skills_prog}>
+                                <h1 className={utilStyles.headingMd}>
+                                    Programming
+                                </h1>
+                                <ul className={styles.mid_list}>
+                                    <li> C/C++</li>
+                                    <li> Java</li>
+                                    <li> Python</li>
+                                    <li> Matlab</li>
+                                </ul>
+                            </div>
+                            <div className={styles.skills_other}>
+                                <h1 className={utilStyles.headingMd}>
+                                    Other
+                                </h1>
+                                <ul className={styles.mid_list}>
+                                    <li> Unity</li>
+                                    <li> Ubuntu</li>
+                                    <li> Agile</li>
+                                    <li> Matlab</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
             </div>
         </Layout>
     )

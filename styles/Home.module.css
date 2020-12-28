@@ -25,11 +25,36 @@
 }
 
 .mid_section{
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
 }
 
+.mid_div {
+  width: 40%;
+}
+
+.skills_div{
+  display: flex;
+  flex-direction: row;
+  margin-top: -1rem;
+  padding-left: 2rem;
+}
+
+.skills_prog{
+  width:50%;
+}
+
+.skills_other{
+  width:50%;
+}
+
+.mid_list{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 0rem;
+}
 .ts_picture{
   width: 40%;
   height: auto;
@@ -86,5 +111,14 @@ padding-left: 1rem;
     overflow:visible;
     text-align: center;
     padding-bottom: 5%;
+  }
+
+  .mid_section{
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  .mid_div{
+    width:100%;
   }
 }
