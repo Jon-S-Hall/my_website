@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
 import styles from '../styles/Home.module.css'
 import utilStyles from '../styles/utils.module.css'
-import layout from "../components/Layout"
 
 export default function Home() {
     return (
@@ -50,9 +49,11 @@ export default function Home() {
                             Interests
                         </p>
                         <ul className={styles.mid_list}>
-                            <li> Jogs/long walks</li>
+                            <li> Coding</li>
+                            <li> Jogging/Hiking</li>
                             <li> Chess</li>
                             <li> Finding cool coffee shops</li>
+
                         </ul>
                     </div>
                     <div className={styles.mid_div}>
@@ -78,7 +79,7 @@ export default function Home() {
                                 <ul className={styles.mid_list}>
                                     <li> Unity</li>
                                     <li> Ubuntu</li>
-                                    <li> Agile</li>
+                                    <li> Agile/Scrum</li>
                                     <li> Matlab</li>
                                 </ul>
                             </div>

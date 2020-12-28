@@ -1,0 +1,55 @@
+.proj_main{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 100%;
+    min-height: 100vh;
+    padding-top: 2%;
+    justify-content: center;
+}
+
+.banner{
+    text-align: center;
+
+}
+
+.top_section{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.project_set{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0rem 5% 0rem 5%;
+}
+
+.project{
+    width:50%;
+    height: 100%;
+    padding: 2rem 1rem 0rem 1rem;
+
+}
+
+.proj_img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.proj_title{
+    text-align: center;
+}
+
+@media (max-width: 1060px) {
+    .project_set{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}

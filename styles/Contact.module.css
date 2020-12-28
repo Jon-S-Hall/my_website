@@ -1,0 +1,74 @@
+.main{
+    max-width: 100%;
+    min-height: 100vh;
+    padding-top: 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner{
+    width:100%;
+    text-align: center;
+    padding: 0% 20% 5% 20%;
+}
+
+.contact_form{
+    text-align: center;
+    width:70%
+}
+
+.input_title{
+    text-align: center;
+    padding-right: 20rem;
+}
+
+
+.input_message{
+    width:20rem;
+}
+.input_name{
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.submit{
+    width:10rem;
+    margin: 5% 5%;
+    text-align: center;
+}
+
+.form_section{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+}
+
+
+.art_div{
+    width:30%;
+    height:auto;
+    margin-top: -2rem;
+    text-align: left;
+}
+
+.art{
+    width:30rem;
+}
+
+@media (max-width: 1060px) {
+
+    .art{
+        display: none;
+    }
+
+    .form_section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact_form{
+        width: 100%;
+    }
+
+}
+
