@@ -1,6 +1,4 @@
 .proj_main{
-    padding-left: 4rem;
-    padding-right: 4rem;
     max-width: 100%;
     min-height: 100vh;
     padding-top: 2%;
@@ -25,20 +23,56 @@
     width: 100%;
     height: auto;
     padding: 0rem 5% 0rem 5%;
+    text-align: center;
+    justify-content: center;
 }
 
 .project{
     width:50%;
     height: 100%;
     padding: 2rem 1rem 0rem 1rem;
+}
+
+
+
+
+.proj_descrip{
+    position: absolute;
+    top:0;
+    bottom:0;
+    opacity: 0;
+    background-color: black;
+    color:white;
+    width: 80%;
+    margin-left: 10%;
+    height: 30rem;
+    border-radius: 10px;
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 10rem;
 
 }
 
-.proj_img{
+.proj_overlay{
+    display: inline-block;
+    position: relative;
+    height: 100%;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
 
+
+.proj_img{
+    width: 80%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.proj_overlay:hover .proj_descrip{
+    opacity: 80%;
 }
 
 .proj_title{
@@ -51,5 +85,12 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+    }
+
+    .project{
+        width: 100%;
+    }
+    .proj_img{
+        height: auto;
     }
 }
