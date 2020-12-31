@@ -3,15 +3,14 @@ import Layout, { siteTitle } from '../../components/Layout'
 import styles from '../../styles/Projects.module.css'
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Lorelad() {
+export default function VR_4D() {
     return (
         <Layout>
             <main className={styles.proj_main}>
                 <h1 className={utilStyles.headingLg}>
-                    Sorry! Page Under Construction.
+                Sorry! Page Under Construction.
                 </h1>
             </main>
         </Layout>
     )
 }
-

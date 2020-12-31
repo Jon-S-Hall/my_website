@@ -1,7 +1,6 @@
 .proj_main{
     max-width: 100%;
     min-height: 100vh;
-    padding-top: 2%;
     justify-content: center;
 }
 
@@ -91,6 +90,10 @@
         width: 100%;
     }
     .proj_img{
+        height: auto;
+    }
+
+    .proj_descrip{
         height: auto;
     }
 }
