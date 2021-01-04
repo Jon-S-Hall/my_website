@@ -1,6 +1,5 @@
 .main{
     max-width: 100%;
-    min-height: 100vh;
     padding-top: 2%;
     justify-content: center;
     text-align: center;
@@ -24,12 +23,14 @@
 
 
 .input_message{
-    width:20rem;
+    width:30rem;
+    height: 10rem;
 }
 .input_name{
     width: 30rem;
     margin-bottom: 2rem;
 }
+
 
 .submit{
     width:10rem;
@@ -68,6 +69,7 @@
     }
     .contact_form{
         width: 100%;
+        padding-bottom: 10rem;
     }
 
 }

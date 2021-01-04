@@ -16,7 +16,7 @@ export default function NavBar() {
                         <Link href={"/Projects"}>Projects</Link>
                     </div>
                     <div className={styles.nav_item}>
-                        <Link href={"#"}>Fun</Link>
+                        <Link href={"/Fun"}>Fun</Link>
                     </div>
                     <div className={styles.nav_item}>
                         <Link href={"/Contact_Me"}>Contact Me</Link>

@@ -22,7 +22,7 @@ export default function Home() {
                                 And I love tackling tough math problems.
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                This may seem a bit masochistic (just ask teenage me) but tough problems allow me to be both
+                                This may seem a bit masochistic but tough problems allow me to be both
                                 logical and creative at the same time. They challenge me to make mistakes, and learn.
                             </p>
                             <p className={utilStyles.bodyMd}>
@@ -34,7 +34,6 @@ export default function Home() {
                                 of my work in the process.
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                Outside of coding I like to go on long jogs, play chess, and find cool coffee shops.
                                 Feel free to look around and let me know you visited!
                             </p>
 
@@ -52,7 +51,7 @@ export default function Home() {
                             <li> Coding</li>
                             <li> Jogging/Hiking</li>
                             <li> Chess</li>
-                            <li> Finding cool coffee shops</li>
+                            <li> Finding cool coffee shops with my girlfriend</li>
 
                         </ul>
                     </div>

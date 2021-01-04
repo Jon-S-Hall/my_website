@@ -23,7 +23,7 @@ export default function Projects() {
                                 <Link href="/projects/Lorelad">
                                     <a>
                                         <div className={styles.proj_overlay}>
-                                            <img className={styles.proj_img} src="dino_me.JPG"/>
+                                            <img className={styles.proj_img} src="lorelad_logo.png"/>
                                             <div className={styles.proj_descrip}>
                                                 <p className={utilStyles.headingMd}>
                                                     A platform to share stories.
@@ -57,11 +57,40 @@ export default function Projects() {
                     </div>
                     <div className={styles.project_set}>
                         <div className={styles.project}>
-
+                            <h1 className={styles.proj_title}>
+                                Pipelined RISC-V Processor
+                            </h1>
+                            <Link href={"/projects/VR_4D"}>
+                                <a>
+                                    <div className={styles.proj_overlay}>
+                                        <img className={styles.proj_img} src="RISCV_Processor.jpg"/>
+                                        <div className={styles.proj_descrip}>
+                                            <p className={utilStyles.headingMd}>
+                                                5-stage RISC-V Pipelined Processor (Verilog Implemented)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
                         <div className={styles.project}>
-
+                            <h1 className={styles.proj_title}>
+                                Chexpert
+                            </h1>
+                            <Link href={"/projects/VR_4D"}>
+                                <a>
+                                    <div className={styles.proj_overlay}>
+                                        <img className={styles.proj_img} src="chexpert_logo.jpg"/>
+                                        <div className={styles.proj_descrip}>
+                                            <p className={utilStyles.headingMd}>
+                                                Chess tool to analyze player weaknesses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
+
                     </div>
                 </section>
             </body>
