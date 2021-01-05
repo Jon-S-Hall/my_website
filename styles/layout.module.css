@@ -61,6 +61,7 @@
     background-color: black;
     color: antiquewhite;
     justify-content: center;
+    border-radius: 50% 50% 0rem 0rem;
 }
 
 .footer_name{
