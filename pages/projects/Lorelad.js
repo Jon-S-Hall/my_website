@@ -74,6 +74,13 @@ export default function Lorelad() {
 
                 </section>
 
+                <section className={styles.bot_section}>
+                    <div className={styles.tools_div}>
+                        <p className={utilStyles.headingXl}>
+                            Tools Used:
+                        </p>
+                    </div>
+                </section>
                 </body>
             </main>
         </Layout>

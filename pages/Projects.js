@@ -26,7 +26,7 @@ export default function Projects() {
                                             <img className={styles.proj_img} src="lorelad_logo.png"/>
                                             <div className={styles.proj_descrip}>
                                                 <p className={utilStyles.headingMd}>
-                                                    A platform to share stories.
+                                                    A platform to share stories for dying languages.
                                                 </p>
                                             </div>
                                         </div>
@@ -38,15 +38,15 @@ export default function Projects() {
 
                         <div className={styles.project}>
                             <h1 className={styles.proj_title}>
-                                VR 4D Visualizer
+                                Machine Language Discernment
                             </h1>
-                            <Link href={"/projects/VR_4D"}>
+                            <Link href={"/projects/MLD"}>
                                 <a>
                                     <div className={styles.proj_overlay}>
-                                        <img className={styles.proj_img} src="vr_me.jpg"/>
+                                        <img className={styles.proj_img} src="ld_tool.png"/>
                                         <div className={styles.proj_descrip}>
                                             <p className={utilStyles.headingMd}>
-                                                Orthogonal projections from 4D space to a 3D plane.
+                                                Quantitative language recognition in audio recordings
                                             </p>
                                         </div>
                                     </div>
@@ -74,16 +74,14 @@ export default function Projects() {
                             </Link>
                         </div>
                         <div className={styles.project}>
-                            <h1 className={styles.proj_title}>
-                                Chexpert
-                            </h1>
+                            <h1 className={utilStyles.headingXl}>VR 4D Visualizer</h1>
                             <Link href={"/projects/VR_4D"}>
                                 <a>
                                     <div className={styles.proj_overlay}>
-                                        <img className={styles.proj_img} src="chexpert_logo.jpg"/>
+                                        <img className={styles.proj_img} src="vr_me.jpg"/>
                                         <div className={styles.proj_descrip}>
                                             <p className={utilStyles.headingMd}>
-                                                Chess tool to analyze player weaknesses
+                                                Orthogonal projections from 4D space to a 3D plane.
                                             </p>
                                         </div>
                                     </div>
@@ -93,6 +91,53 @@ export default function Projects() {
 
                     </div>
                 </section>
+            <section className={styles.mid_section}>
+                <div className={styles.banner}>
+                    <h2 className={utilStyles.heading2Xl}>
+                        Other projects
+                    </h2>
+                </div>
+                <div className={styles.smaller_projects}>
+                    <div className={styles.small_project}>
+                        <h1 className={utilStyles.headingLg}>QIMS Publication</h1>
+                        <Link href={"/projects/3DQI"}>
+                            <a>
+                                <div className={styles.proj_overlay}>
+                                    <img className={styles.small_proj_img} src="qims_pub.png"/>
+                                    <div className={styles.small_proj_descrip}>
+                                        <p className={utilStyles.headingMd}>
+                                            Research on statistical reproducibility of medical imaging
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </Link>
+                    </div>
+
+                    <div className={styles.small_project}>
+                        <h1 className={utilStyles.headingXl}>Chexpert</h1>
+                        <Link href={"/projects/VR_4D"}>
+                            <a>
+                                <div className={styles.proj_overlay}>
+                                    <img className={styles.small_proj_img} src="chexpert_logo.png"/>
+                                    <div className={styles.small_proj_descrip}>
+                                        <p className={utilStyles.headingMd}>
+                                            Chess tool to analyze player weaknesses
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={styles.small_project}>
+                        <h1 className={utilStyles.headingXl}>Android Apps</h1>
+                    </div>
+                    <div className={styles.small_project}>
+                        <h1 className={utilStyles.headingXl}>Class Projects</h1>
+                    </div>
+                </div>
+
+            </section>
             </body>
         </Layout>
     )
