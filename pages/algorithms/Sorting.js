@@ -14,79 +14,9 @@ function sleep(ms) {
 }
 
 
-//var bubbleChart;
-//var insertChart;
+var bubbleChart;
+var insertChart;
 
-window.onload = function(){
-    var bubble_graph = document.getElementById("bubble_graph").getContext("2d")
-    var insert_graph = document.getElementById("insert_graph").getContext("2d")
-    window.bubbleChart = new Chart(bubble_graph, {
-        type: 'bar',
-        data: {
-            labels: [],
-            datasets: [{
-                label: "bubble sort",
-                data: [],
-                backgroundColor: "#000000",
-            }]
-        },
-        options: {
-            events:[],
-            showTooltips: false,
-            animation:{
-                duration:0
-            },
-            scales: {
-                xAxes: [{
-                    ticks: {
-                        min: 0,
-                        max:200,
-                    }
-                }],
-                yAxes: [{
-                    ticks: {
-                        min:0,
-                        max:100,
-                    }
-                }]
-            }
-        }
-    });
-
-    window.insertChart = new Chart(insert_graph, {
-        type: 'bar',
-        data: {
-            labels: [],
-            datasets: [{
-                label: "insert sort",
-                data: [],
-                backgroundColor: "#0000ff   ",
-            }]
-        },
-        options: {
-            events:[],
-            showTooltips: false,
-            animation:{
-                duration:0
-            },
-            scales: {
-                xAxes: [{
-                    ticks: {
-                        min: 0,
-                        max:1000,
-                    }
-                }],
-                yAxes: [{
-                    ticks: {
-                        min:0,
-                        max:100,
-                    }
-                }]
-            }
-        }
-    });
-
-}
 
 class sorting extends Component{
 
