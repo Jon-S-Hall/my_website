@@ -13,9 +13,11 @@ export default function Fun() {
         <Layout>
             <main className={styles.proj_main}>
                 <h1 className={utilStyles.headingLg}>
-                    Sorry! Page Under Construction. <a href="algorithms/Sorting">Selection Sort</a>
+                    Jon's Blog (jlog)
                 </h1>
-
+		<p>
+		    I have insufficient memory. So I like to write down my thoughts and feelings on issues (particularly on the social impact of tech) before they're 			    overwritten.
+		</p>
             </main>
         </Layout>
     )

@@ -1,22 +1,83 @@
 .main {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    max-width: 100%;
-    padding-top: 15%;
+    max-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.canvas {
+    position: relative;
+    height:100%;
+    width:100%;
+    z-index: 1;
+}
+
+.head_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:40%;
+    width: 100%;
+}
+
+.head_div{
+    width:100%;
+    justify-content: center;
+    padding: 0 20% 0 20%;
+    z-index: 5;
+}
+
+.head_text {
+    color: black;
     text-align: center;
+    width: 100%;
+    font-size: 250%;
+    margin: 0 0 0 0;
+}
+
+.b_wrap{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    cursor: pointer;
+}
+
+.button_text{
+    color: navajowhite;
+    font-size: 1.5rem;
+    background-color: black;
+    font-family: 'OCRAExtendedRegular';
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    border: none;
+}
+
+.sub_text{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .button {
-    margin-top:3rem;
     background-color:black;
-    border:none;
-    color:white;
-    font-weight: bolder;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 100%;
+    border: 0px transparent;
     cursor:pointer;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: 0 0 0 0;
+    padding: 0 0 0 0;
+
 }
 
 .button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 17px 20px 0 rgba(150,150,150,0.5),0 17px 20px 0 rgba(150,150,150,0.5);
 }

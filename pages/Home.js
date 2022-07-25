@@ -9,24 +9,23 @@ export default function Home() {
             <div className={styles.main}>
                 <section className={styles.top_section}>
                     <div className={styles.ts_picture}>
-                    <img className={styles.img} src="/colored_me.JPG"/>
+                    	<img className={styles.img} src="/colored_me.JPG"/>
                     </div>
                     <div className={styles.ts_right}>
                         <div className={styles.title}>
                             <p className={utilStyles.headingXl}>
-                                I'm Jon, a senior in Computer Engineering and Statistics at Boston University.
+                                I'm Jon, Software Engineer at Microsoft	
                             </p>
                         </div>
                         <div className={styles.ts_body}>
                             <p className={utilStyles.bodyMd}>
-                                And I love tackling tough math problems.
+                                and I'm a huge sucker for tech. 
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                This may seem a bit masochistic but tough problems allow me to be both
-                                logical and creative at the same time. They challenge me to make mistakes, and learn.
+                                I love learning about the latest advances in technology, and imagining how we can use these new tools to impact 					 people positively. 
                             </p>
                             <p className={utilStyles.bodyMd}>
-                                And the solutions usually end up being pretty neat.
+                                Outside of work I tackle some of these projects and write about my progress <b>here</b>. I'll also talk about ideas that are beyond 					 my abilities <b>here</b>. 
                             </p>
                             <p className={utilStyles.bodyMd}>
                                 While my passion lies with math and algorithms, I appreciate the need for responsive,
@@ -36,12 +35,12 @@ export default function Home() {
                             <p className={utilStyles.bodyMd}>
                                 Feel free to look around and let me know you visited!
                             </p>
-
                         </div>
-
                     </div>
-
                 </section>
+                <div className={styles.mid_header}>
+                    	 <p className={utilStyles.heading2Xl}> Technical Specifications: </p>
+                </div>
                 <section className={styles.mid_section}>
                     <div className={styles.mid_div}>
                         <p className={utilStyles.heading2Xl}>
@@ -85,7 +84,6 @@ export default function Home() {
 
                         </div>
                     </div>
-
                 </section>
             </div>
         </Layout>

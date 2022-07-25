@@ -116,7 +116,7 @@ export default function Projects() {
 
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingXl}>Chexpert</h1>
-                        <Link href={"/projects/VR_4D"}>
+                        <Link href={"/projects/chexpert"}>
                             <a>
                                 <div className={styles.proj_overlay}>
                                     <img className={styles.small_proj_img} src="chexpert_logo.png"/>
@@ -131,6 +131,18 @@ export default function Projects() {
                     </div>
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingXl}>Android Apps</h1>
+                        <Link href={"/projects/VR_4D"}>
+                            <a>
+                                <div className={styles.proj_overlay}>
+                                    <img className={styles.small_proj_img} src="covidapp_login.png"/>
+                                    <div className={styles.small_proj_descrip}>
+                                        <p className={utilStyles.headingMd}>
+                                            COVID monitor and 2d game
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </Link>
                     </div>
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingXl}>Class Projects</h1>

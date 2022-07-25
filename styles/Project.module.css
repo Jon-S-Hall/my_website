@@ -7,7 +7,23 @@
 .banner{
     text-align: center;
     height: auto;
-    overflow: hidden;
+    position: relative;
+}
+
+.visit_button{
+    position: absolute;
+    right:0;
+    top:25%;
+    margin-right: 15%;
+    width:15%;
+
+}
+
+.lorelad_button{
+    width: 100%;
+    background-color: green;
+
+    border-radius: 2rem;
 }
 .logo{
     width:30%;

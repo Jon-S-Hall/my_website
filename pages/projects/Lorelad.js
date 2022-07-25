@@ -9,6 +9,13 @@ export default function Lorelad() {
             <main className={styles.body}>
                 <div className={styles.banner}>
                     <img className={styles.logo} src={"/LORELAD.png"}/>
+                    <a href={"https://lorelad.com"}>
+                    <div className={styles.visit_button}>
+
+                            <button className={styles.lorelad_button}   ><p className={utilStyles.headingLg}>Visit LORELAD</p></button>
+
+                    </div>
+                    </a>
                 </div>
                 <body className={styles.body}>
                 <section className={styles.top_section}>

@@ -9,7 +9,6 @@
 .main {
   max-width: 100%;
   height: 90%;
-  padding-top: 2%;
   justify-content: center;
 }
 
@@ -18,7 +17,6 @@
   flex-direction: row;
   height:100%;
   padding-left: 7%;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -29,6 +27,9 @@
   justify-content: center;
 }
 
+.mid_header{
+  text-align:center;
+}
 .mid_div {
   width: 40%;
 }
@@ -62,6 +63,16 @@
 
 }
 
+.bot_section{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bot_p{
+
+}
 
 .img{
   width:100%;
@@ -82,8 +93,9 @@ padding-left: 1rem;
 .ts_body{
   padding-left: 3rem;
   padding-right: 7rem;
-  padding-top: 2%;
+  padding-top: 2%;	
 }
+
 .p{
   padding-left: 5rem;
 }
