@@ -4,10 +4,6 @@ import styles from '../styles/Projects.module.css'
 import utilStyles from '../styles/utils.module.css'
 import dynamic from "next/dynamic";
 
-const NoSSRComponent = dynamic(() => import("../pages/algorithms/Sorting"), {
-    ssr: false,
-});
-
 export default function Fun() {
     return (
         <Layout>
