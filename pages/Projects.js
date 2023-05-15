@@ -21,7 +21,6 @@ export default function Projects() {
                                     Lorelad
                                 </h1>
                                 <Link href="/projects/Lorelad">
-                                    <a>
                                         <div className={styles.proj_overlay}>
                                             <img className={styles.proj_img} src="lorelad_logo.png"/>
                                             <div className={styles.proj_descrip}>
@@ -30,7 +29,6 @@ export default function Projects() {
                                                 </p>
                                             </div>
                                         </div>
-                                    </a>
                                 </Link>
 
 
@@ -41,7 +39,6 @@ export default function Projects() {
                                 Machine Language Discernment
                             </h1>
                             <Link href={"/projects/MLD"}>
-                                <a>
                                     <div className={styles.proj_overlay}>
                                         <img className={styles.proj_img} src="ld_tool.png"/>
                                         <div className={styles.proj_descrip}>
@@ -50,7 +47,6 @@ export default function Projects() {
                                             </p>
                                         </div>
                                     </div>
-                                </a>
                             </Link>
 
                         </div>
@@ -61,7 +57,6 @@ export default function Projects() {
                                 Pipelined RISC-V Processor
                             </h1>
                             <Link href={"/projects/VR_4D"}>
-                                <a>
                                     <div className={styles.proj_overlay}>
                                         <img className={styles.proj_img} src="RISCV_Processor.jpg"/>
                                         <div className={styles.proj_descrip}>
@@ -70,13 +65,11 @@ export default function Projects() {
                                             </p>
                                         </div>
                                     </div>
-                                </a>
                             </Link>
                         </div>
                         <div className={styles.project}>
                             <h1 className={utilStyles.headingXl}>VR 4D Visualizer</h1>
                             <Link href={"/projects/VR_4D"}>
-                                <a>
                                     <div className={styles.proj_overlay}>
                                         <img className={styles.proj_img} src="vr_me.jpg"/>
                                         <div className={styles.proj_descrip}>
@@ -85,7 +78,6 @@ export default function Projects() {
                                             </p>
                                         </div>
                                     </div>
-                                </a>
                             </Link>
                         </div>
 
@@ -101,7 +93,6 @@ export default function Projects() {
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingLg}>QIMS Publication</h1>
                         <Link href={"/projects/3DQI"}>
-                            <a>
                                 <div className={styles.proj_overlay}>
                                     <img className={styles.small_proj_img} src="qims_pub.png"/>
                                     <div className={styles.small_proj_descrip}>
@@ -110,14 +101,12 @@ export default function Projects() {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
                         </Link>
                     </div>
 
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingXl}>Chexpert</h1>
                         <Link href={"/projects/chexpert"}>
-                            <a>
                                 <div className={styles.proj_overlay}>
                                     <img className={styles.small_proj_img} src="chexpert_logo.png"/>
                                     <div className={styles.small_proj_descrip}>
@@ -126,13 +115,11 @@ export default function Projects() {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
                         </Link>
                     </div>
                     <div className={styles.small_project}>
                         <h1 className={utilStyles.headingXl}>Android Apps</h1>
                         <Link href={"/projects/VR_4D"}>
-                            <a>
                                 <div className={styles.proj_overlay}>
                                     <img className={styles.small_proj_img} src="covidapp_login.png"/>
                                     <div className={styles.small_proj_descrip}>
@@ -141,7 +128,6 @@ export default function Projects() {
                                         </p>
                                     </div>
                                 </div>
-                            </a>
                         </Link>
                     </div>
                     <div className={styles.small_project}>

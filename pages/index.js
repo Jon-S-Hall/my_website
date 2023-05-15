@@ -202,12 +202,12 @@ const Canvas = props => {
             <div className={styles.head_container}>
                 <div className={styles.head_div}>
                     <p className={styles.head_text}>
-                        Hi I'm Jon, SWE at Microsoft.
+                        Hi I'm Jon.
                     </p>
                 </div>
                 <div className={styles.head_div}>
                     <p className={styles.sub_text}>
-                        and I like making things.
+                        I try and make stuff.
                     </p>
                 </div>
                 <div className={styles.head_div}>
@@ -215,7 +215,7 @@ const Canvas = props => {
                         <div className={styles.button}>
                             <a href={"/Home"}>
                                 <button className={styles.button_text}>
-                                    Take a Look.
+                                    This is stuff by Jon.
                                 </button>
                             </a>
                         </div>
