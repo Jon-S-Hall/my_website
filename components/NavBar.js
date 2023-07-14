@@ -19,6 +19,9 @@ export default function NavBar() {
                         <Link href={"/Fun"}>Fun</Link>
                     </div>
                     <div className={styles.nav_item}>
+                        <Link href={"/remote_association_test"}>RAT</Link>
+                    </div>
+                    <div className={styles.nav_item}>
                         <Link href={"/Contact_Me"}>Contact Me</Link>
                     </div>
 

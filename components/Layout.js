@@ -56,7 +56,7 @@ export default function Layout({ children, home }) {
                         </a>
                     </li>
                 </div>
-                <div className={styles.footer_name}>Jonathan Hall 2021&#169;</div>
+                <div className={styles.footer_name}>Jonathan Hall 2023&#169;</div>
             </footer>
         </div>
 

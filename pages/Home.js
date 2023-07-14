@@ -19,13 +19,7 @@ export default function Home() {
                         </div>
                         <div className={styles.ts_body}>
                             <p className={utilStyles.bodyMd}>
-                                I need tums, cold brew, and air conditioning.
-                            </p>
-                            <p className={utilStyles.bodyMd}>
-                                I like concerts, chess, and movie theaters.
-                            </p>
-                            <p className={utilStyles.bodyMd}>
-                                I don't like for javascript and imposter syndrome.
+                                I like tums, cold brew, and air conditioning.
                             </p>
                             <p className={utilStyles.bodyMd}>
                                 Otherwise, you know as much as I do.
