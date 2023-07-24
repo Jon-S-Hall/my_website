@@ -41,16 +41,9 @@ const Canvas = props => {
         }else if(outer_radius > 300)
         {
             numVertices = 20
-        }else if(outer_radius > 250)
-        {
-            numVertices = 17
-        }else if(outer_radius > 200)
-        {
-            numVertices = 15
         }else
         {
-            // if it's too small, don't render.
-            numVertices = 0
+            numVertices = 17
         }
 
         for(let i = 0; i < numVertices; i++) //above 500 points makes frame rate really slow (5 fps)
