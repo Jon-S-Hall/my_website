@@ -29,8 +29,8 @@ const Canvas = props => {
         const center_x = window.innerWidth/2;
         const center_y = window.innerHeight/2;
         const center_z = 0;
-        const outer_radius = window.innerHeight/2;
-        const inner_radius = window.innerHeight/2 - 100;
+        const outer_radius = Math.min(window.innerHeight, window.innerWidth)/2;
+        const inner_radius = Math.min(window.innerHeight, window.innerWidth)/2 - Math.min(window.innerHeight, window.innerWidth)/5;
 
         for(let i = 0; i < 25; i++) //above 500 points makes frame rate really slow (5 fps)
         {
@@ -50,8 +50,8 @@ const Canvas = props => {
 
     function update_vert(vertex)
     {
-        const outer_radius = window.innerHeight/2;
-        const inner_radius = window.innerHeight/2 - 100;
+        const outer_radius = Math.min(window.innerHeight, window.innerWidth)/2;
+        const inner_radius = Math.min(window.innerHeight, window.innerWidth)/2 - Math.min(window.innerHeight, window.innerWidth)/5;
         const center_x = window.innerWidth/2;
         const center_y = window.innerHeight/2;
         const center_z = 0;
@@ -96,8 +96,10 @@ const Canvas = props => {
             ctx.canvas.height = window.innerHeight;
             ctx.clearRect(0,0, ctx.canvas.width,ctx.canvas.height);
 
-            const outer_radius = window.innerHeight/2;
-            const inner_radius = window.innerHeight/2 - 100;
+            const smallestDimension = Math.min(window.innerHeight, window.innerWidth);
+
+        const outer_radius = smallestDimension/2;
+        const inner_radius = smallestDimension/2 - smallestDimension/5;
 
             const center_x = window.innerWidth/2;
             const center_y = window.innerHeight/2;
@@ -112,9 +114,9 @@ const Canvas = props => {
                     let lineDist = Math.pow(Math.pow(vertex.x - pair.x, 2) + Math.pow(vertex.y - pair.y, 2) + Math.pow(vertex.z - pair.z, 2), 0.5)
                     ctx.globalAlpha = Math.max(0, (1000 - lineDist) / 1000)
                     //r is based onx, g is based on y, b is based on z.
-                    let x_source_ratio = (vertex.x - center_x + outer_radius) / (window.innerHeight+20); //0-1
-                    let y_source_ratio = (vertex.y - center_y + outer_radius) / (window.innerHeight+20); //0-1
-                    let z_source_ratio = (vertex.z - center_z + outer_radius) / (window.innerHeight+20); //0-1
+                    let x_source_ratio = (vertex.x - center_x + outer_radius) / (smallestDimension+20); //0-1
+                    let y_source_ratio = (vertex.y - center_y + outer_radius) / (smallestDimension+20); //0-1
+                    let z_source_ratio = (vertex.z - center_z + outer_radius) / (smallestDimension+20); //0-1
                     if (x_source_ratio < 0.064)
                     {
                         x_source_ratio = 0.064;
@@ -129,9 +131,9 @@ const Canvas = props => {
                     }
 
 
-                    let x_dest_ratio = (pair.x - center_x + outer_radius)/(window.innerHeight+20); //0-1
-                    let y_dest_ratio = (pair.y - center_y + outer_radius)/(window.innerHeight+20); //0-1
-                    let z_dest_ratio = (pair.z - center_z + outer_radius)/(window.innerHeight+20); //0-1
+                    let x_dest_ratio = (pair.x - center_x + outer_radius)/(smallestDimension+20); //0-1
+                    let y_dest_ratio = (pair.y - center_y + outer_radius)/(smallestDimension+20); //0-1
+                    let z_dest_ratio = (pair.z - center_z + outer_radius)/(smallestDimension+20); //0-1
 
                     if (x_dest_ratio < 0.064)
                     {
