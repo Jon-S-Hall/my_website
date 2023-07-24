@@ -1,7 +1,6 @@
 .centered {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .proj_main{
@@ -14,11 +13,44 @@
     text-align: center;
 }
 
-.top_section{
+.test_section{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin-bottom: 5rem;
+    margin: auto;
+}
+
+.test_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.question_wrapper{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.score_wrapper{
+    padding-top: 1rem;
+}
+
+.question_prompt{
+
+}
+
+.button{
+    width:20rem;
+    margin: auto;
 }
