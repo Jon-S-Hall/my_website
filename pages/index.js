@@ -32,7 +32,27 @@ const Canvas = props => {
         const outer_radius = Math.min(window.innerHeight, window.innerWidth)/2;
         const inner_radius = Math.min(window.innerHeight, window.innerWidth)/2 - Math.min(window.innerHeight, window.innerWidth)/5;
 
-        for(let i = 0; i < 25; i++) //above 500 points makes frame rate really slow (5 fps)
+        //basing number of vertices on screen size. This should allow smaller devices (less cpu) to display more easily
+        let numVertices = 0;
+        console.log("outer_radius: " + outer_radius)
+        if(outer_radius > 350)
+        {
+            numVertices = 25
+        }else if(outer_radius > 300)
+        {
+            numVertices = 20
+        }else if(outer_radius > 250)
+        {
+            numVertices = 17
+        }else if(outer_radius > 200)
+        {
+            numVertices = 15
+        }else
+        {
+            numVertices = 10
+        }
+
+        for(let i = 0; i < numVertices; i++) //above 500 points makes frame rate really slow (5 fps)
         {
             let pos = random_ring_coordinate_generator(outer_radius, inner_radius);
             let vertex = {
@@ -61,7 +81,13 @@ const Canvas = props => {
 
         let dist_from_center = Math.pow(Math.pow(vertex.x - center_x, 2) + Math.pow(vertex.y-center_y, 2) + Math.pow(vertex.z - center_z, 2), 0.5);
 
-        if(dist_from_center > outer_radius + 5)
+        //move stray points back to safe ground
+        if(dist_from_center > outer_radius + 5
+            || vertex.x > window.innerWidth
+            || vertex.x < 0
+            || vertex.y > window.innerHeight
+            || vertex.y < 0
+        )
         {
             let pos = random_ring_coordinate_generator(outer_radius, inner_radius);
             vertex.x = pos.x;
@@ -74,6 +100,7 @@ const Canvas = props => {
             vertex.vel_z = -vertex.vel_z;
         }else if(dist_from_center < inner_radius)
         {
+            // this can trap points in inner radius
             vertex.vel_x = -vertex.vel_x;
             vertex.vel_y = -vertex.vel_y;
             vertex.vel_z = -vertex.vel_z;
@@ -161,7 +188,7 @@ const Canvas = props => {
                     ctx.strokeStyle = gradient;
                     ctx.lineWidth = 3;
                     ctx.beginPath();
-                    ctx.moveTo(vertex.x+5, vertex.y+5);
+                    ctx.moveTo(vertex.x+5, vertex.y+5); //lol, what is 5 for?
                     ctx.lineTo(pair.x+5, pair.y + 5);
                     ctx.stroke();
                 }
