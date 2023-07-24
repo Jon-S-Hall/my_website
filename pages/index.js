@@ -82,17 +82,18 @@ const Canvas = props => {
         let dist_from_center = Math.pow(Math.pow(vertex.x - center_x, 2) + Math.pow(vertex.y-center_y, 2) + Math.pow(vertex.z - center_z, 2), 0.5);
 
         //move stray points back to safe ground
-        if(dist_from_center > outer_radius + 5
+        if(dist_from_center > outer_radius + 3
             || vertex.x > window.innerWidth
             || vertex.x < 0
             || vertex.y > window.innerHeight
             || vertex.y < 0
+            || dist_from_center < inner_radius - 3
         )
         {
             let pos = random_ring_coordinate_generator(outer_radius, inner_radius);
-            vertex.x = pos.x;
-            vertex.y = pos.y;
-            vertex.z = pos.z;
+            vertex.x = pos.x + center_x;
+            vertex.y = pos.y + center_y;
+            vertex.z = pos.z + center_z;
         }else if(dist_from_center > outer_radius)
         {
             vertex.vel_x = -vertex.vel_x;

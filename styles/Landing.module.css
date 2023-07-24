@@ -65,7 +65,8 @@
 
 .button {
     background-color:black;
-    width: 100%;
+    width: 10rem;
+    margin: auto;
     border: 0px transparent;
     cursor:pointer;
     outline: none;
@@ -73,7 +74,7 @@
     -webkit-appearance: none;
     appearance: none;
     box-shadow: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: .5rem 0 .5rem 0;
 
 }
 
